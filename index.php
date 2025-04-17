@@ -1,13 +1,11 @@
 <?php
-session_start();
-require_once 'config/database.php';
 require_once 'config/functions.php';
 
-if (isLoggedIn()) {
+if (is_logged_in()) {
     if ($_SESSION['role'] == 'admin') {
         redirect('admin/dashboard.php');
     } else {
-        redirect('anggota/dashboard.php');
+        redirect('member/dashboard.php');
     }
 } else {
     redirect('login.php');

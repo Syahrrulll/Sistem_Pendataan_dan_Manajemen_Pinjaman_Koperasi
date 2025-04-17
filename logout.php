@@ -1,6 +1,9 @@
 <?php
+require_once 'config/functions.php';
+
 session_start();
+session_unset();
 session_destroy();
-header("Location: login.php");
-exit();
+
+redirect('login.php');
 ?>
