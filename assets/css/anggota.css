@@ -1,0 +1,78 @@
+/* Style untuk halaman anggota */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: #4361ee;
+}
+
+.navbar .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.badge {
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+.badge.bg-success {
+    background-color: #28a745;
+}
+
+.badge.bg-danger {
+    background-color: #dc3545;
+}
+
+/* Hover effect untuk tombol aksi */
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-sm:hover {
+    opacity: 0.8;
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .table th, .table td {
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #f1f1f1;
+    color: #888;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+ 

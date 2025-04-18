@@ -1,0 +1,127 @@
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fb;
+    color: #333;
+    padding-top: 60px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2c3e50;
+    padding: 10px 30px;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.navbar .nav-link:hover {
+    color: #ecf0f1;
+}
+
+/* Content Section */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #1abc9c;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+}
+
+.card-body {
+    padding: 2rem;
+    color: #333;
+}
+
+.card-body form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body input,
+.card-body select,
+.card-body textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.card-body input:disabled,
+.card-body select:disabled,
+.card-body textarea:disabled {
+    background-color: #f0f0f0;
+}
+
+.card-body button {
+    padding: 12px 25px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-body button:hover {
+    background-color: #16a085;
+    transform: translateY(-2px);
+}
+
+.card-body a {
+    padding: 12px 25px;
+    background-color: #bdc3c7;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.card-body a:hover {
+    background-color: #95a5a6;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.footer p {
+    margin: 0;
+}

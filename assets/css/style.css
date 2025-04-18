@@ -1,23 +1,66 @@
 /* style.css - Umum untuk seluruh halaman */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
 
 body {
     background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    padding-top: 60px; /* Menambahkan ruang agar navbar tidak menutupi konten */
+    transition: background-color 0.3s ease;
 }
 
+body:hover {
+    background-color: #e0e0e0; /* Efek hover ringan di body */
+}
+
+/* Navbar - Desain modern dan responsif */
 .navbar {
     background-color: #2d3436;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #2c3e50; /* Warna navbar berubah saat hover */
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.navbar .navbar-brand:hover {
+    color: #dfe6e9; /* Efek hover pada brand */
 }
 
 .navbar .nav-link {
     color: #fff;
     font-weight: 600;
+    font-size: 1rem;
+    margin-right: 20px;
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .navbar .nav-link:hover {
     color: #dfe6e9;
+    transform: translateY(-2px); /* Efek mengangkat saat hover */
 }
 
 /* Umum untuk footer */
@@ -25,8 +68,27 @@ footer {
     background-color: #2d3436;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 30px 20px;
     position: relative;
     bottom: 0;
     width: 100%;
+    font-size: 0.9rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #34495e; /* Footer berubah warna saat hover */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .navbar .nav-link {
+        font-size: 0.9rem;
+        margin-right: 10px;
+    }
+
+    footer {
+        padding: 20px;
+    }
 }
